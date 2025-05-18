@@ -36,6 +36,6 @@ router
     router.post('/', [SiswasController, 'store'])
     router.get('/:id', [SiswasController, 'show'])
     router.put('/:id', [SiswasController, 'update'])
-    router.delete('/:id', [BooksController, 'destroy'])
+    router.delete('/:id', [SiswasController, 'destroy'])
   })
   .prefix('/siswas')
